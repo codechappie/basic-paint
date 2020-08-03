@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/script.js"></script>
+</head>
+<body onload="init()">
+    <div class="container">
+        <canvas id="can"></canvas>
+        <button class="toolbar-toggle">
+            <img src="./assets/icons8_circled_menu_1.svg" alt="">
+        </button>
+        <div class="toolbar">
+            <div class="item">
+                <label for="color-chosen">Color</label>
+                <div class="color-chosen">
+                    <div class="color-space green" value="red"></div>
+                </div>
+            </div>
+            <div class="palette-color">
+                <div>Paleta</div>
+                <div class="mini-container">
+                    <div class="color-preview black" id="black" onclick="color(this)"></div>
+                    <div class="color-preview gray" id="gray" onclick="color(this)"></div>
+                    <div class="color-preview green" id="green" onclick="color(this)"></div>
+                    <div class="color-preview blue" id="blue" onclick="color(this)"></div>
+                    <div class="color-preview red" id="red" onclick="color(this)"></div>
+                    <div class="color-preview yellow" id="yellow" onclick="color(this)"></div>
+                    <div class="color-preview orange" id="orange" onclick="color(this)"></div>
+                    <div class="color-preview pink" id="pink" onclick="color(this)"></div>
+                    <div class="color-preview brown" id="brown" onclick="color(this)"></div>
+                    <div class="color-preview violet" id="violet" onclick="color(this)"></div>
+                    <div class="color-preview white" id="white" onclick="color(this)"></div>
+                </div>
+            </div>
+            <div class="item" id="eraser">
+                <label for="color-chosen">Borrador</label>
+                <img src="./assets/icons8_erase.svg" alt="">
+            </div>
+            <div class="item" id="pen">
+                <label for="color-chosen">Lapicero</label>
+                <img src="./assets/icons8_ball_point_pen.svg" alt="">
+            </div>
+
+            <input type="button" value="clear" id="clr" size="23" onclick="clean()">
+        </div>
+    </div>
+</body>
+
+</html>

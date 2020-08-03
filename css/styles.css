@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Jost', sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  font-size: 15px;
+}
+
+/**Colors**/
+.black {
+  background-color: black;
+}
+.gray {
+  background-color: gray;
+}
+.green {
+  background-color: green;
+}
+.red {
+  background: red;
+}
+.blue {
+  background-color: blue;
+}
+.yellow {
+  background-color: yellow;
+}
+.violet {
+  background-color: violet;
+}
+.orange {
+  background-color: orange;
+}
+.brown {
+  background-color: brown;
+}
+.pink {
+  background-color: pink;
+}
+.white {
+  background-color: white;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 255, 255, 0.212);
+}
+#can {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #333;
+  display: block;
+}
+
+/**Toolbar Toggle*/
+.toolbar-toggle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  top: 10px;
+  left: 10px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 4px rgba(2, 2, 2, 0.596);
+  background: #fff;
+}
+.toolbar-toggle img {
+  width: 30px;
+  height: 30px;
+}
+
+/**Toolbar*/
+.toolbar {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 80px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 15px 0;
+  border-radius: 0 8px 8px 0;
+  box-shadow: 0 0 10px rgba(51, 51, 51, 0.295);
+  background: #fff;
+}
+.toolbar .item{
+    width: 90%;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.toolbar .item label{
+    font-size: .9rem;
+}
+
+.color-chosen{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rgb(243, 243, 243);
+    border-radius: 100px;
+    overflow: hidden;
+}
+.color-space{
+    height: 45px;
+    width: 45px;
+    border-radius: 200px;
+}
+.palette-color {
+    background: #fff;
+    display: none;
+}
+.palette-color .mini-container {
+  display: flex;
+}
+.palette-color .color-preview {
+  border: 1px solid #333;
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  margin: 0 2px;
+}
