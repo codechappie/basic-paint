@@ -56,7 +56,7 @@ body {
 #can {
   width: 100%;
   height: 100%;
-  border: 2px solid #333;
+  border: 2px solid rgb(209, 238, 255);
   display: block;
 }
 
@@ -103,6 +103,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+    cursor: pointer;
 }
 .toolbar .item label{
     font-size: .9rem;
